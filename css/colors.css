@@ -1,0 +1,10 @@
+:root{
+    --color-principal: orange;
+    --color-secundario: blue;
+    --color-negro: black;
+    --color-blanco: white;
+    --color-borde: silver;
+    --color-azulfondo: rgb(18, 61, 139);
+    --color-azulfondoHover: rgb(13, 43, 99);
+    
+}

@@ -1,0 +1,222 @@
+/* font-family: 'Roboto', sans-serif; */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header{
+    width: 100%;
+    background-color: var(--color-blanco);
+    height: auto;
+    border-bottom: 1px solid var(--color-borde);
+}
+
+.containerMenu{
+    width: 100%;
+    max-width: 1400px;    
+    margin: auto; /* centra automáticamente */    
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /*centrando la imágen y el texto del menú*/
+}
+
+.logo{
+    width: 200px;
+    padding: 10px;
+    height: auto;
+}
+
+.logo img{
+    width: 100%;
+    height: 100%;
+}
+
+.btnmenu{
+    font-size: 30px;
+    padding: 10px;
+    display: none;
+}
+
+nav ul{
+    display: flex;
+}
+
+nav ul a{
+    padding: 20px;
+    text-decoration: none;
+    list-style: none;
+    color: var(--color-negro);
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    transition: all ease .3s;
+}
+
+nav ul a:hover{
+    color: var(--color-principal);
+}
+
+.mostrarOcultar{
+    left: 0%;
+    opacity: 1;
+}
+
+.flexRds{
+    width: 100%;
+    display: flex;
+    padding: 20px;
+    display: none;
+}
+
+.flexRdsEscritorio{
+    width: auto;
+    display: flex;
+    padding: 20px;
+}
+
+.flexRdsEscritorio a, .flexRds a{
+    padding-right: 10px;
+    font-size: 20px;
+    color: var(--color-secundario);
+}
+
+.fondoBanner{
+    width: 100%;
+    height: 600px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.infoBanner{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.24);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.infoBanner h1{
+    width: 100%;
+    padding: 10px;
+    font-size: 50px;
+    color: var(--color-blanco);
+    font-family: 'arial', sans-serif;
+    font-weight: bold;
+}
+
+.infoBanner h2{
+    width: 100%;
+    padding: 10px;
+    font-size: 25px;
+    color: var(--color-blanco);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+    padding-bottom: 50px;
+}
+
+.infoBanner a{
+    background-color: var(--color-secundario);
+    padding: 20px 100px; /* paddingTopBot paddingLeftR*/
+    text-decoration: none;
+    color: var(--color-blanco);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.nosotros{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    padding: 50px;
+}
+
+.flexNosotros{
+    display: flex;
+    gap: 50px;    
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagenNosotros{
+    width: 500px;    
+}
+
+.imagenNosotros img{
+    width: 100%;
+    height: 100%;
+}
+
+.textoNosotros{
+    width: 500px;
+    color: var(--color-negro);
+    font-family: 'Roboto', sans-serif;
+}
+
+.flexServicios{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.servicios{
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    text-align: left;
+    padding: 20px;
+    border: 3px double var(--color-blanco);
+    color: var(--color-blanco);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    transition: all ease .3s;
+}
+
+.servicios:hover{
+    background-color: var(--color-azulfondoHover);
+    border-radius: 10px;
+}
+
+
+.sectionServicios{
+    background-color: var(--color-azulfondo);
+    padding: 50px;
+}
+
+.servicios .icon{
+    width: 100%;
+    font-size: 40px;
+    padding-bottom: 10px;
+}
+.servicios:hover i{
+    animation-name: animacion;
+    animation-duration: 1s;
+}
+@keyframes animacion{
+    0% {transform:rotate(0deg)}
+    30% {transform:rotate(15deg)}
+    30% {transform:rotate(15deg)}
+    30% {transform:scale(2)}
+    60% {transform:rotate(-15deg)}
+    100% {transform:rotate(0deg)}
+}
+
+.servicios h2{
+    font-size: 20px;
+    padding-bottom: 5px;
+}
+
+.sectionServicios h3 {
+    color: var(--color-blanco);
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 30px;
+}
